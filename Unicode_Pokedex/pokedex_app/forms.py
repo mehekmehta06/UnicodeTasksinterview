@@ -7,7 +7,16 @@ class PokemonTypeForm(forms.Form):
         ('grass', 'Grass'),
         ('fire', 'Fire'),
         ('water', 'Water'),
+         ('normal','Normal'),
+          ('fighting','Fighting'),
+           ('flying','Flying'),
+           ('shadow','Shadow')
+        ]
         
-    ]
+    type = forms.ChoiceField(choices=type_choices, label='Select a Pokémon Type') 
+        
+        
+        
+    
 
-    type = forms.ChoiceField(choices=type_choices, label='Select a Pokémon Type')
+   
